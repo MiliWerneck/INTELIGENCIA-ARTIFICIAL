@@ -32,10 +32,13 @@ de desempenho para cada configuração e a pontuação média geral.
 ## Considerações:
 
 Status = sujo 1, limpo 0;
+
 local = 0 sem aspirador, 1 com aspirador;
+
 cont_media = conta quantas vezes a limpeza foi executada;
 
 Pontuação: A cada limpeza, somar um ponto ao agente aspirador.
+
 Pontuação Final: Soma de 16 estados possíveis / 16.
 
 Desempenho satisfatório >= 0.3
