@@ -16,10 +16,10 @@ de desempenho para cada configuração e a pontuação média geral.
 </p>
 
 <p align="left">
-  <img src="src/images/estados.png" height = "150"></img>
+  <img src="src/images/estados.png" height = "350"></img>
 </p>
 
-Possíveis estados:
+## Possíveis estados:
 1) A e B = sujo, local A
 2) A e B = sujo, local B
 3) A = sujo e B = limpo, local A
@@ -39,6 +39,10 @@ Pontuação: A cada limpeza, somar um ponto ao agente aspirador.
 Pontuação Final: Soma de 16 estados possíveis / 16.
 
 Desempenho satisfatório >= 0.3
+
+## Resultado obtido:
+
+Desempenho: 0.5 ou 50%, considerado satisfatório pelos parâmetros estabelecidos.
 
 
 ### Compilação:
