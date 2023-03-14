@@ -20,14 +20,14 @@ de desempenho para cada configuração e a pontuação média geral.
 </p>
 
 ## Possíveis estados:
-1) A e B = sujo, local A
-2) A e B = sujo, local B
-3) A = sujo e B = limpo, local A
-4) A = sujo e B = limpo, local B
-5) A = limpo e B = sujo, local A
-6) A = limpo e B = sujo, local B
-7) A e B = limpo, local A
-8) A e B = limpo, local B
+- A e B = sujo, local A
+- A e B = sujo, local B
+- A = sujo e B = limpo, local A
+- A = sujo e B = limpo, local B
+- A = limpo e B = sujo, local A
+- A = limpo e B = sujo, local B
+- A e B = limpo, local A
+- A e B = limpo, local B
 
 ## Considerações:
 
