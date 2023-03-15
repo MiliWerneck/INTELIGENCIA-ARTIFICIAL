@@ -35,46 +35,27 @@ int agente_simples(int local, int estado) {
 }
 
 int main() {
-	int cont = 0;
-	double cont_media = 0;
+	double cont = 0;
 	int agente;
-	int robo;
+	int robo = 0;
 
 	double vetor[8] = { 0,0,0,0,0,0,0,0 }; //Vetor onde serão armazenados os valores de limpar.
 
 	for (int i = 0; i < 8; i++) {
-		cont = 0;
-		cont_media = 0;
+		robo = matriz[i][0];
+		agente = agente_simples(robo, matriz[i][robo + 1]);
+		cont = (agente == limpar) ? 1 : 0;
 
-		while (cont != 3) {
-			robo = matriz[i][0];
-			agente = agente_simples(robo, matriz[i][robo + 1]);
+		vetor[i] = cont;
+		cout << agente << endl;
 
-			if (agente == limpar) {
-				matriz[i][robo + 1] = limpo;
-				cont_media++;
-			} else if (agente == direita) {
-				matriz[i][0] = B;
-				cont++;
-
-			} else if (agente == esquerda) {
-				matriz[i][0] = A;
-				cont++;
-			}
-			cout << matriz[i][0];
-			cout << matriz[i][1];
-			cout << matriz[i][2] << endl;
-		}
-		vetor[i] = cont_media;
-		cout << "Limpou: " << cont_media << " local(is)" << endl;
-		cout << endl;
 	}
-	cont_media = 0;
+	cont = 0;
 
-	for (int i = 0; i < 8; i++) {
-		cont_media += vetor[i];
+	for (int i = 0; i < 8; i++) { // Vetor que conta quantas vezes limpar foi executada.
+		cont += vetor[i];
 	}
 
-	cout << "Desempenho Geral: " << (cont_media / 16) << endl;
+	cout << "Desempenho Geral: " << (cont / 8) << endl;
 	return 0;
 }
