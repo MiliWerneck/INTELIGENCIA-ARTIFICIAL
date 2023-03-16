@@ -16,7 +16,7 @@ de desempenho para cada configuração e a pontuação média geral.
 </p>
 
 <p align="left">
-  <img src="src/images/estados.png" height = "150"></img>
+  <img src="src/images/estados.png" height = "350"></img>
 </p>
 
 Possíveis estados:
