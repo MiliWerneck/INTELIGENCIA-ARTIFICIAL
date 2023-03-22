@@ -16,7 +16,7 @@ de desempenho para cada configuração e a pontuação média geral.
 </p>
 
 <p align="left">
-  <img src="src/images/estados.png" height = "350"></img>
+  <img src="src/images/estados.png" height = "150"></img>
 </p>
 
 Possíveis estados:
@@ -34,15 +34,16 @@ Possíveis estados:
 Status = sujo 1, limpo 0;
 local = 0 sem aspirador, 1 com aspirador;
 cont_media = conta quantas vezes a limpeza foi executada;
+penaliza = conta os movimentos do robô.
 
 Pontuação: A cada limpeza, somar um ponto ao agente aspirador.
-Pontuação Final: Soma de 16 estados possíveis / 16.
+Pontuação Final: Soma de estados possíveis / 8.
 
-Desempenho satisfatório >= 0.3
+Desempenho satisfatório >= 0
 
 
 ### Compilação:
 
-| Comando | Função |
-|---------| --------|
+| Comando  | Função                        |
+| -------- | ----------------------------- |
 | `make r` | Limpa tudo, compila e executa |
