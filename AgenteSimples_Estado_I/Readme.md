@@ -50,6 +50,7 @@ penaliza = conta os movimentos do robô, descontando -1 a cada movimento.
 </p>
 
 Pontuação: A cada limpeza, somar um ponto ao agente aspirador.
+Pontuação: A cada movimento, subtrair um ponto ao agente aspirador.
 
 ## Resultados:
 
